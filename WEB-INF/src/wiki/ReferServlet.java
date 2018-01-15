@@ -19,9 +19,10 @@ public class ReferServlet extends HttpServlet {
 			if(name != null) {
 				WikiPageDTO wikiPage = WikiPageDAO.getInstance().findByName(name);
 				HttpSession session = request.getSession();
-				session.setAttribute("WikiPageDTO", wikiPage);
+				session.setAttribute("wikiPage", wikiPage);
 			}
 			request.getRequestDispatcher("/refer.jsp").forward(request, response);
+			
 		} catch(SQLException e) {
 			throw new ServletException(e);
 		}

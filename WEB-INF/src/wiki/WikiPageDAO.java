@@ -11,13 +11,15 @@ public class WikiPageDAO {
 	// ResultSetの1行をWikiPageDTOのインスタンスに変換するクラス
 	// ここでしか利用されないため、無名クラスとしてこの場所でインスタンス化する
 	private ResultSetBeanMapping<WikiPageDTO> allMapping = new ResultSetBeanMapping<WikiPageDTO>() {
-		public WikiPageDTO createFormResultSet(ResultSet rs) throws SQLException {
-			WikiPageDTO page = new WikiPageDTO();
-			page.setName(rs.getString("name"));
-			page.setContent(rs.getString("content"));
-			page.setTimestamp(rs.getTimestamp("update_time"));
-			return page;
-		}
+//		
+//		public WikiPageDTO createFormResultSet(ResultSet rs) throws SQLException {
+//			WikiPageDTO page = new WikiPageDTO();
+//			page.setName(rs.getString("name"));
+//			page.setContent(rs.getString("content"));
+//			page.setTimestamp(rs.getTimestamp("update_time"));
+//			return page;
+//		}
+//		
 		@Override
 		public WikiPageDTO createFromResultSet(ResultSet rs) throws SQLException {
 			// TODO Auto-generated method stub

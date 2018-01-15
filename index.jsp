@@ -1,1 +1,3 @@
-<jsp:forward page="/refer?name=welcome"></jsp:forward>
+<%-- <jsp:forward page="/refer?name=welcome"></jsp:forward> --%>
+
+indexだよ

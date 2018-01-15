@@ -1,6 +1,6 @@
 <h1>${wikiPage.name }の編集</h1>
 
-<from action="update">
+<form action="update">
 	<input type="hidden" name="cmd" value="update">
 	<input type="hidden" name="name" value="${wikiPage.name }">
 	
@@ -8,6 +8,6 @@
 	<br>
 	<input type="submit" value="更新">
 	<input type="submit" value="削除" onclick="cmd.value='delete'">
-	<input type="button" value="キャンセル" onclick="location.href='reger'">
+	<input type="button" value="キャンセル" onclick="location.href='refer'">
 	
-</from>
+</form>

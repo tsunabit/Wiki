@@ -12,7 +12,10 @@ public class WikiPageDTO {
 	private Timestamp updateTime;
 	
 	// 整形を行った内容を返す
-	// *****************
+	public String getFormatedContent() {
+		WikiFromater formater = new WikiFromater();
+		return formater.formatText(this.content);
+	}
 	
 	// ゲッタ、セッタ
 	public String getName() {
