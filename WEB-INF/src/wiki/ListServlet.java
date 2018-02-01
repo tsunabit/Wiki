@@ -20,5 +20,4 @@ public class ListServlet extends HttpServlet {
 			throw new ServletException(e);
 		}
 	}
-
 }

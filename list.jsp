@@ -4,19 +4,18 @@
 <%@ page import="wiki.WikiPageDTO" %>
 
 <h1>ページの一覧</h1>
-<%-- 
 <ul>
-<%
-List<WikiPageDTO> list = (List<WikiPageDTO>)request.getAttribute("list");
-for(WikiPageDTO tableName: list) {
-	out.println("<li>" + tableName.getName() + "</li>");
-	// out.println(tableName.getContent());
-}
-%>
+ <%
+ List<WikiPageDTO> list = (List<WikiPageDTO>)request.getAttribute("list");
+ for(WikiPageDTO content: list) {
+	 /* out.println("<li>" + content.getName() + "</li>"); */
+	 out.println("<li><a href=\"refer?name=" + content.getName() + "\">" + content.getName() + "</a></li>");
+ }
+ %>
 </ul>
- --%>
 
 <!-- JSTL(カスタムタグ)の使い方 -->
+<%-- 
 <ul>
 <c:forEach var="wikiPage" items="${list}">
 	<c:url value="/refer" var="url">
@@ -25,4 +24,4 @@ for(WikiPageDTO tableName: list) {
 	<LI><A href="${url}">${wikiPage.name}</A><BR></LI>
 </c:forEach>
 </ul>
-
+ --%>

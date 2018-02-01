@@ -14,7 +14,8 @@ public class WikiFromater {
 	
 	// <BR>タグの追加
 	private String addBrToEachLines(String text) {
-		text = text.replaceAll("[¥n]", "<BR>¥n");
+		// text = text.replaceAll("[¥n]", "<BR>¥n");
+		text = text.replaceAll("\\n", "<BR>\n");
 		return text;
 	}
 	
@@ -22,13 +23,14 @@ public class WikiFromater {
 	private String escapeHtmlTags(String text) {
 		text = text.replaceAll("<", "&lt");
 		text = text.replaceAll(">", "&gt");
-		text = text.replaceAll("¥t", "	");
+		text = text.replaceAll("\\t", "	");
 		return text;
 	}
 	
 	// リンク生成
 	private String createHyperLink(String text) {
-		Pattern pattern = Pattern.compile("(mailto|http|https|ftp):¥¥/¥¥/([^¥¥s]+)");
+		// Pattern pattern = Pattern.compile("(mailto|http|https|ftp):¥¥/¥¥/([^¥¥s]+)");
+		Pattern pattern = Pattern.compile("(mailto|http|https|ftp):\\/\\/([^¥¥s]+)");
 		Matcher matcher = pattern.matcher(text);
 		StringBuffer sb = new StringBuffer();
 		

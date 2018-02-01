@@ -10,7 +10,7 @@
 </head>
 <body>
 <!-- ロゴ -->
-<img src="image/wikiFavicon.jpg" alt="wiki" width="50" height="50">
+<a href="<%=request.getContextPath()%>"><img src="image/wikiFavicon.jpg" alt="wiki" width="50" height="50"></a>
 <!-- ヘッダーメニュー -->
 <a href="list">一覧</a>
 |
