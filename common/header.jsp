@@ -12,9 +12,9 @@
 <!-- ロゴ -->
 <a href="<%=request.getContextPath()%>"><img src="image/wikiFavicon.jpg" alt="wiki" width="50" height="50"></a>
 <!-- ヘッダーメニュー -->
-<a href="list">一覧</a>
+<a href="list">一覧表示</a>
 |
-<a href="create.jsp">新規</a>
+<a href="create.jsp">新規作成</a>
 
 <!-- メッセージ表示 -->
 <p>${ message }

@@ -8,8 +8,8 @@
  <%
  List<WikiPageDTO> list = (List<WikiPageDTO>)request.getAttribute("list");
  if(list.size() == 0){
-	 out.println("まだページがありません。<br>");
-	 out.println("Page Nothing<br>");
+	 out.println("<h3>まだページがありません。</h3>");
+	 out.println("<h3>Page Nothing</h3>");
  }
  for(WikiPageDTO content: list) {
 	 /* out.println("<li>" + content.getName() + "</li>"); */
