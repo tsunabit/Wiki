@@ -19,7 +19,7 @@
 
  
 
-
+<!-- 共通のヘッダーとフッターを<jsp-config>で定義 -->
 <jsp-config>
 	<jsp-property-group>
 		<url-pattern>*.jsp</url-pattern>

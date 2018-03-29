@@ -10,6 +10,6 @@
 <form action="create2.jsp">
 <dl>
 	<dt><input type="text" name="name"></dt>
-	<dt><input type="submit" value="次へ"></dt>
+	<dt><input type="submit" value="作成"></dt>
 </dl>
 </form>
