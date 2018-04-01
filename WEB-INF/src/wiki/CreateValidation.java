@@ -24,6 +24,7 @@ public class CreateValidation extends HttpServlet {
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/jsp/InputError.jsp");
 			dispatcher.forward(request, response);
 		}else {
+//			request.setAttribute("name", name);
 			RequestDispatcher dispatcher = request.getRequestDispatcher("/create2.jsp");
 			dispatcher.forward(request, response);
 		}

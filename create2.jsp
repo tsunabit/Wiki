@@ -1,6 +1,14 @@
 <h1>新規作成</h1>
 
-<p>ページ名を入力してください</p>
+<% String name = request.getParameter("name"); %>
+
+<div>
+<p><b>
+<%= name %>
+</b>
+のページを作成します。</p>
+</div>
+<!-- <p>ページ名を入力してください</p> -->
 
 <form action="create">
 	<input type="hidden" name="cmd" value="create">
