@@ -54,6 +54,15 @@
 
 <!-- 新規作成 -->
 <servlet>
+	<servlet-name>CreateValidation</servlet-name>
+	<servlet-class>wiki.CreateValidation</servlet-class>
+</servlet>
+<servlet-mapping>
+	<servlet-name>CreateValidation</servlet-name>
+	<url-pattern>/CreateValidation</url-pattern>
+</servlet-mapping>
+
+<servlet>
 	<servlet-name>create</servlet-name>
 	<servlet-class>wiki.CreateServlet</servlet-class>
 </servlet>

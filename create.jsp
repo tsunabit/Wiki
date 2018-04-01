@@ -7,11 +7,11 @@
 <h1>新規作成</h1>
 <p>ページ名を入力してください</p>
 
-<form action="create2.jsp">
+<!-- <form action="create2.jsp"> -->
+<form action=CreateValidation method=post>
 <dl>
 	<dt><input type="text" name="name"></dt>
 	<dt><input type="submit" value="作成">
 		<input type="reset" value="リセット"></dt>
-	
 </dl>
 </form>
