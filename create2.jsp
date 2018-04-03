@@ -1,4 +1,4 @@
-<h1>新規作成</h1>
+<h3>新規作成</h3>
 
 <% String name = request.getParameter("name"); %>
 
@@ -17,6 +17,7 @@
 	<textarea rows="15" cols="60" name="content"></textarea>
 	<br>
 	<input type="submit" value="作成">
-	<input type="button" value="キャンセル" onclick="location.href='href'">
+	<!-- <input type="button" value="キャンセル" onclick="location.href='href'"> -->
+	<input type="button" value="キャンセル" onclick="location.href='/Wiki'">
 	
 </form>
