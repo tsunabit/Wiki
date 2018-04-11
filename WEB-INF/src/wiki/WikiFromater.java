@@ -30,7 +30,7 @@ public class WikiFromater {
 	// リンク生成
 	private String createHyperLink(String text) {
 		// Pattern pattern = Pattern.compile("(mailto|http|https|ftp):¥¥/¥¥/([^¥¥s]+)");
-		Pattern pattern = Pattern.compile("(mailto|http|https|ftp):\\/\\/([^¥¥s]+)");
+		Pattern pattern = Pattern.compile("(mailto|http|https|ftp):\\/\\/([^\\s]+)");
 		Matcher matcher = pattern.matcher(text);
 		StringBuffer sb = new StringBuffer();
 		
