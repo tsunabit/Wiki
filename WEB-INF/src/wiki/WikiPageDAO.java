@@ -39,7 +39,20 @@ public class WikiPageDAO {
 	
 	// 全件検索を実施
 	public List<WikiPageDTO> findALL() throws SQLException {
+		// String sql = "select * from wiki_page order by update_time desc";
+		String sql = "select * from wiki_page order by name asc";
+		return DBManager.simpleFind(sql, allMapping);
+	}
+	
+	// 全件検索を実施 update_time desc
+	public List<WikiPageDTO> findALL_UTD() throws SQLException {
 		String sql = "select * from wiki_page order by update_time desc";
+		return DBManager.simpleFind(sql, allMapping);
+	}
+	
+	// 全件検索を実施 update_time asc
+	public List<WikiPageDTO> findALL_ASC() throws SQLException {
+		String sql = "select * from wiki_page order by update_time asc";
 		return DBManager.simpleFind(sql, allMapping);
 	}
 	

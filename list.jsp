@@ -4,6 +4,17 @@
 <%@ page import="wiki.WikiPageDTO" %>
 
 <h1>ページの一覧</h1>
+並び替え
+	<form action="list" method="get">
+		<button type="submit" name="findall" value="findall">名前順</button>
+        <button type="submit" name="updateDesc" value="updateDesc">更新時間が新しい順</button>
+        <button type="submit" name="updateAsc" value="updateAsc">更新時間が古い順</button>
+    </form>
+
+<!-- <a href="">更新時間が新しい順</a>
+|
+<a href="">更新時間が古い順</a> -->
+
 <ul>
  <%
  List<WikiPageDTO> list = (List<WikiPageDTO>)request.getAttribute("list");
