@@ -17,10 +17,10 @@
 	
 	<textarea rows="15" cols="60" name="content"></textarea>
 	<br>
+	<!-- 画像選択ボタン -->
 	<!-- <td><input type="file" name="image" size="30" /></td> -->
-	<td><input type="file" name="image" value="画像選択" /></td>
+	<td><input type="file" name="image" value="画像" /></td>
 	<br>
-	
 	<input type="submit" value="作成">
 	<!-- <input type="button" value="キャンセル" onclick="location.href='href'"> -->
 	<input type="button" value="キャンセル" onclick="location.href='/Wiki'">
