@@ -33,7 +33,7 @@ public class ListServlet extends HttpServlet {
 			
 //			List<WikiPageDTO> list = WikiPageDAO.getInstance().findALL();
 			request.setAttribute("list", list);
-			request.getRequestDispatcher("/list.jsp").forward(request, response);
+			request.getRequestDispatcher("/jsp/list.jsp").forward(request, response);
 		} catch(SQLException e) {
 			throw new ServletException(e);
 		}

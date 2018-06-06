@@ -1,9 +1,9 @@
 eclipse.preferences.version=1
 encoding//WEB-INF/web.xml=UTF-8
 encoding//common/footer.jsp=UTF-8
+encoding//jsp/list.jsp=UTF-8
 encoding/create.jsp=UTF-8
 encoding/create2.jsp=UTF-8
 encoding/index.jsp=UTF-8
-encoding/list.jsp=UTF-8
 encoding/refer.jsp=UTF-8
 encoding/update.jsp=UTF-8
