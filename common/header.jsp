@@ -14,7 +14,12 @@
 <!-- ヘッダーメニュー -->
 <a href="list">一覧表示</a>
 |
-<a href="create.jsp">新規作成</a>
+<!-- <a href="create.jsp">新規作成</a> -->
+<!-- 絶対パス -->
+<!-- create.jspをjspフォルダへ移動して、ここを絶対パスに書き換えるとlist.jspの表示ができなくなる -->
+<!-- <a href="/Wiki/jsp/create.jsp">新規作成</a> -->
+<a href="<%= request.getContextPath() %>/jsp/create.jsp">新規作成</a>
+
 
 <!-- メッセージ表示 -->
 <p>${ message }
