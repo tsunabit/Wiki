@@ -24,9 +24,13 @@
  }
  for(WikiPageDTO content: list) {
 	 /* out.println("<li>" + content.getName() + "</li>"); */
-	 out.println("<li><a href=\"refer?name=" + content.getName() + "\">" + content.getName() + "</a></li>");
+	 /* jspフォルダの整理の影響でコメントアウト */
+	 /* out.println("<li><a href=\"refer?name=" + content.getName() + "\">" + content.getName() + "</a></li>"); */
+	 /* out.println("<li><a href=\"jsp\\refer.jsp?name=" + content.getName() + "\">" + content.getName() + "</a></li>"); */
+	 out.println("<li><a href=" + request.getContextPath() + "/jsp/refer.jsp" + ">" + content.getName() + "</a></li>");
  }
  %>
+
 </ul>
 
 <!-- JSTL(カスタムタグ)の使い方 -->

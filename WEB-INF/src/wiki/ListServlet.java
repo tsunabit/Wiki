@@ -15,7 +15,7 @@ public class ListServlet extends HttpServlet {
 		try {
 			List<WikiPageDTO> list;
 			
-			String para = "";
+//			String para = "";
 			if("updateDesc".equals(request.getParameter("updateDesc"))) {
 //				para = request.getParameter("updateDesc");
 //				List<WikiPageDTO> 

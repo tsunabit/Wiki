@@ -11,6 +11,7 @@
 <!-- <p>ページ名を入力してください</p> -->
 
 <!-- <form action="create"> -->
+<!-- 画像アップロードのためenctype="multipart/form-data"を追加 -->
 <form method="post" action="create" enctype="multipart/form-data">
 	<input type="hidden" name="cmd" value="create">
 	<input type="hidden" name="name" value="${param.name }">
