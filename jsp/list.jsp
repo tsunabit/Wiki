@@ -26,8 +26,13 @@
 	 /* out.println("<li>" + content.getName() + "</li>"); */
 	 /* jspフォルダの整理の影響でコメントアウト */
 	 /* out.println("<li><a href=\"refer?name=" + content.getName() + "\">" + content.getName() + "</a></li>"); */
+	 
+	 out.println("<li><a href=\"refer?name=" + content.getName() + "\">" + content.getName() + "</a></li>");
+	 
 	 /* out.println("<li><a href=\"jsp\\refer.jsp?name=" + content.getName() + "\">" + content.getName() + "</a></li>"); */
-	 out.println("<li><a href=" + request.getContextPath() + "/jsp/refer.jsp" + ">" + content.getName() + "</a></li>");
+	 /* out.println("<li><a href = jsp/refer.jsp?name=" + content.getName() + ">" + content.getName() + "</a></li>"); */
+	 /* out.println("<li><a href=" + request.getContextPath() + "/jsp/refer.jsp" + ">" + content.getName() + "</a></li>"); */
+	 /* out.println("<li><a href = "update_form.jsp?ID_A== rs.getString("ID_A") ">番号</a></li>"); */
  }
  %>
 
