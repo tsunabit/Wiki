@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Context>
+<!--
+属性名 	概要
+name 	データソースを一意に識別する名前。 JNDIを利用してデータソースを取得する際のキーになる名前。
+auth 	リソースの制御方法。データソースを利用する場合は「Container」で固定。
+type 	リソースのデータ型。データソースを利用する場合は「javax.sql.DataSource」で固定。
+driverClassName 	JDBCドライバクラスの完全修飾名（使用するドライバ毎に決まっている）。 MySQLは「com.mysql.jdbc.Driver」。
+url 	接続文字列（接続するデータベースによりURLフォーマットが異なる）。 MySQLは「jdbc:mysql://サーバー名:ポート番号/データベース名」。
+connectionProperties 	接続文字列に付与するオプション。 セミコロン区切りで連結。
+username 	接続時に使用するユーザ名。
+password 	接続時に使用するパスワード。
+maxActive 	プーリングする最大接続数。
+maxIdle 	待機時に最低維持する接続数。
+maxWait 	接続に対しての最大待ち時間（ミリ秒）。
+validationQuery 	接続検証用のSQL。
+-->
+
+<!-- ネットに転がってたサンプルの記述 -->
+<!-- 
+  <Resource
+      name="jdbc/myds"
+      auth="Container"
+      type="javax.sql.DataSource"
+      driverClassName="com.mysql.jdbc.Driver"
+      url="jdbc:mysql://localhost:3306/javatest"
+      connectionProperties="autoReconnect=true;verifyServerCertificate=false;useSSL=false;requireSSL=false"
+      username="user"
+      password="password"
+	  validationQuery="select 1"/>
+-->
+
+<!-- tomcat公式のサンプル-->
+  <Resource 
+		name="jdbc/myds"
+		auth="Container" 
+		type="javax.sql.DataSource"
+		maxTotal="100" 
+		maxIdle="30" 
+		maxWaitMillis="10000"
+		username="user" 
+		password="password" 
+		driverClassName="com.mysql.jdbc.Driver"
+		url="jdbc:mysql://localhost:3306/javatest"/>
+
+</Context>
